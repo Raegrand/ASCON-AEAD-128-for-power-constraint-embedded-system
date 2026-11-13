@@ -24,11 +24,11 @@
     "PDN_VPITCH": 150.0,
     "PDN_HPITCH": 150.0,
     "FP_SIZING": "absolute",
-    "DIE_AREA": "0 0 1110 1110",
-    "FP_DEF_TEMPLATE": "dir::A68_A.def",
-    "PL_TARGET_DENSITY_PCT": 78,
+    "DIE_AREA": "0 0 1110 1005",
+    "FP_DEF_TEMPLATE": "dir::A68_CH2.def",
+    "PL_TARGET_DENSITY_PCT": 88,
     "PL_TIMING_DRIVEN": true,
-    "PL_ROUTABILITY_DRIVEN": true,
+    "PL_ROUTABILITY_DRIVEN": false,
     "RT_MAX_LAYER": "Metal4",
     "VDD_NETS": [
         "VDD"
@@ -43,7 +43,7 @@
     "GPL_CELL_PADDING": 0,
     "DPL_CELL_PADDING": 0,
     "DIODE_PADDING": 0,
-    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "RUN_HEURISTIC_DIODE_INSERTION": false,
     "RUN_ANTENNA_REPAIR": true,
     "DRT_ANTENNA_REPAIR_ITERS": 3,
     "RUN_POST_GRT_DESIGN_REPAIR": false,
@@ -58,5 +58,10 @@
         "nom_tt_025C_5v00",
         "max_ss_125C_4v50",
         "min_ff_n40C_5v50"
-    ]
+    ],
+    "CORE_AREA": "6.16 7.84 1104 999",
+    "DESIGN_REPAIR_REMOVE_BUFFERS": true,
+    "CTS_SINK_CLUSTERING_SIZE": 30,
+    "CTS_SINK_CLUSTERING_MAX_DIAMETER": 70,
+    "PNR_SDC_FILE": "dir::base.sdc"
 }
